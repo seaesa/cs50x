@@ -3,15 +3,16 @@
 int main(void)
 {
   int height;
-  char matrix[8][20] = {
-      "#  #",
-      "##  ##",
-      "###  ###",
-      "####  ####",
-      "#####  #####",
-      "######  ######",
-      "#######  #######",
-      "########  ########"};
+  char matrix[8][10] = {
+      "#",
+      "##",
+      "###",
+      "####",
+      "#####",
+      "######",
+      "#######",
+      "########",
+  };
   do
   {
     height = get_int("Height: ");
@@ -23,7 +24,7 @@ int main(void)
     {
       printf(" ");
     }
-    printf("%s\n", matrix[i]);
+    printf("%s  %s\n", matrix[i], matrix[i]);
   }
   return 0;
 }
